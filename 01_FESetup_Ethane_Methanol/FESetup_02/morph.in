@@ -1,0 +1,20 @@
+[globals]
+logfile = eth-meth.log
+forcefield = amber, ff14SB, tip3p, hfe
+gaff = gaff2
+mdengine = amber, sander 
+AFE.type = Sire
+AFE.separate_vdw_elec = false
+
+
+[ligand]
+basedir = solutes 
+file.name = solute.pdb
+molecules = ethane, methanol
+
+# the following are required to create the morph in solution
+box.type = rectangular
+box.length = 12.0
+
+morph_pairs = ethane > methanol, methanol > ethane
+
