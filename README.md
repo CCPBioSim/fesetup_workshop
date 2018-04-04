@@ -26,13 +26,13 @@ Furthermore you can find model answers to the notebooks in the `answers` directo
 
 ## Contents
 
-### [01 FEsetup Ethane Methanol notebook](html/01_FESetup_ethane_methanol.html) ([answers](html/answers/01_FESetup_ethane_methanol_answers.html))
+### [01 FESetup Ethane Methanol notebook](html/01_FESetup_ethane_methanol.html) ([answers](html/answers/01_FESetup_ethane_methanol_answers.html))
 
 This notebooks teaches how to setup an alchemical free energy calculation for computing the relative hydration free energy between ethane and methanol. 
 
 [download](01_FESetup_ethane_methanol.ipynb) | [download answers](answers/01_FESetup_ethane_methanol_answers.ipynb)
 
-### [02 Lysozume and advanced FESetup topics](html/02_Lysozyme_and_Advanced_FESetup.html) ([answers](html/answers/02_Lysozyme_and_Advanced_FESetup_answers.html))
+### [02 Lysozyme and advanced FESetup topics](html/02_Lysozyme_and_Advanced_FESetup.html) ([answers](html/answers/02_Lysozyme_and_Advanced_FESetup_answers.html))
 
 The second notebook will guide you through using FESetup for preparing protein simulations using different outputs as well as how to setup protein simulations with ligands bound. 
 
