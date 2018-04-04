@@ -12,11 +12,9 @@ This workshop is designed to introduce you to how to use FESetup to prepare prot
 
 The workshop consists of a set of introductory slides covering the basics of alchemical free energy simulations and two Jupyter notebooks. These are available
 below, and can be run using the
-<a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">workshop Jupyter server</a>.
+<a href="https://ccpbiosim.github.io/workshop/events/bristol2018/server.html" target="_blank">workshop Jupyter server</a>.
 
-Start the server by <a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">clicking here</a>.
-This will open a Jupyter notebook interface. Be patient as this may take 30-60 seconds.
-Once this has opened, navigate to the `fesetup_workshop` directory and you will find the
+Once you have logged in, navigate to the `fesetup_workshop` directory and you will find the
 notebooks there.
 
 The two workshop notebooks are `01_FESetup_ethane_methanol.ipynb` and `02_Lysozyme_and_Advanced_FESetup.ipynb`. The two notebooks do not depend on each other, but the first one covers the basics of FESetup whereas the second one covers more advanced topics. 
@@ -37,22 +35,3 @@ This notebooks teaches how to setup an alchemical free energy calculation for co
 The second notebook will guide you through using FESetup for preparing protein simulations using different outputs as well as how to setup protein simulations with ligands bound. 
 
 [download](02_lists.ipynb) | [download answers](answers/02_lists.ipynb)
-
-
-## How to download to run at home
-
-While this workshop is running using cloud servers generously supplied
-by [Microsoft Azure](https://azure.microsoft.com/en-us/services/container-service/kubernetes/),
-you can also download and run this workshop on your own computer if
-you are using docker (and your computer has an X86-64 processor that
-supports AVX, e.g. like most Intel processors since 2011). To run on
-your own computer type;
-
-```
-docker run -it --rm -p 8888:8888 chryswoods/bss-workshop:latest
-```
-
-This will download the image (may take a while...) and will run it on
-your computer. It will print out the URL of the notebook which you should navigate
-to in your browser (it will look something like `http://localhost:8888/?token=7f4b6be12ff1cec13903d0f27bab2ad7ea3eeaa9f0098dee`)
-
