@@ -4,7 +4,6 @@
 
 logfile = T4-lysozyme_morph.log
 forcefield = amber, ff14SB, tip3p, cm
-#ff_addons = GLYCAM_06j-1, lipid14
 AFE.type = Sire 
 AFE.separate_vdw_elec = False
 
@@ -30,7 +29,7 @@ min.nsteps = 100
 [protein]
 basedir = proteins
 molecules = 181L
-propka = t
+neutralize = True
 
 # create the solvated complex and minimise it, from this create the
 # solvated complex with the ligand morphs copied in
@@ -44,25 +43,3 @@ neutralize = yes
 min.nsteps = 200
 min.ncyc = 100
 
-# the following can be used to carry out a "equilibration" of the system,
-# the final box will be used to construct the morph box
-
-# heat the system to the final temperature running NVT
-#md.heat.nsteps = 5000
-#md.heat.T = 300.0
-#md.heat.restraint = backbone
-#md.heat.restr_force = 5.0
-
-# fix the density of the system running NpT
-#md.press.nsteps = 10000
-#md.press.T = 300.0
-#md.press.p = 1.0
-#md.press.restraint = backbone
-#md.press.restr_force = 4.0
-
-# restraints release in 4 steps, this is a NpT protocol
-#md.relax.nrestr = 4
-#md.relax.nsteps = 500
-#md.relax.T = 300.0
-#md.relax.p = 1.0
-#md.relax.restraint = backbone

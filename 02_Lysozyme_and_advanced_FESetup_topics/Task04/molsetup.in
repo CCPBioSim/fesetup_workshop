@@ -1,17 +1,16 @@
-# T4-lysozyme: setup for standard MD simulation, e.g. for MM-PBSA
+# T4-lysozyme: 
 # parameterise a set of ligands and create their complexes with a set of
 # proteins
 
 logfile = T4-lysozyme_molsetup.log
 forcefield = amber, ff14SB, tip3p, cm
-#ff_addons = GLYCAM_06j-1, lipid14
 
 mdengine = amber, sander
 
 [ligand]
 basedir = ligands
 file.name = ligand.mol2
-molecules = benzol, benzofuran, indene, p-xylene, o-xylene
+molecules = 
 
 box.type = rectangular
 box.length = 12.0
@@ -29,9 +28,8 @@ neutralize = True
 [complex]
 # explicit enumeration of pairs, otherwise all-with-all creation even
 # when there is no [complex] section
-pairs = 181L : benzol, 181L : benzofuran, 181L : indene,
-	181L : isobutylbenzene, 181L : indole, 181L : n-butylbenzene,
-	181L : p-xylene, 181L : o-xylene
+pairs = 
+
 
 box.type = rectangular
 box.length = 12.0
@@ -40,25 +38,3 @@ align_axes = True
 min.nsteps = 200
 min.ncyc = 100
 
-# the following can be used to carry out "equilibration" of the system,
-# the final box will be used to construct the morph box
-
-# heat the system to the final temperature running NVT
-#md.heat.nsteps = 5000
-#md.heat.T = 300.0
-#md.heat.restraint = backbone
-#md.heat.restr_force = 5.0
-
-# fix the density of the system running NpT
-#md.press.nsteps = 10000
-#md.press.T = 300.0
-#md.press.p = 1.0
-#md.press.restraint = backbone
-#md.press.restr_force = 4.0
-
-# restraints release in 4 steps, this is a NpT protocol
-#md.relax.nrestr = 4
-#md.relax.nsteps = 500
-#md.relax.T = 300.0
-#md.relax.p = 1.0
-#md.relax.restraint = backbone
