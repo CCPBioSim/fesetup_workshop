@@ -1,0 +1,68 @@
+# T4-lysozyme: setup for relative alchemical free energy simulations
+# parameterises each ligand and creates morph mappings by minimising
+# the number of softcore atoms, create a complex with these morphs
+
+logfile = T4-lysozyme_morph.log
+forcefield = amber, ff14SB, tip3p, cm
+#ff_addons = GLYCAM_06j-1, lipid14
+AFE.type = Sire 
+AFE.separate_vdw_elec = False
+
+mdengine = amber, sander
+
+
+# create vacuum and solvated ligand boxes, create morphs for both vacuum
+# and solution
+[ligand]
+basedir = ligands
+file.name = ligand.mol2
+
+morph_pairs = 
+
+# the following are required to create the morph in solution
+box.type = rectangular
+box.length = 12.0
+neutralize = yes
+min.nsteps = 100
+
+
+# prepare the biomolecule (could also be DNA for example)
+[protein]
+basedir = proteins
+molecules = 181L
+propka = t
+
+# create the solvated complex and minimise it, from this create the
+# solvated complex with the ligand morphs copied in
+[complex]
+# the following are required to create the morph in solution
+box.type = rectangular
+box.length = 12.0
+align_axes = True
+neutralize = yes
+
+min.nsteps = 200
+min.ncyc = 100
+
+# the following can be used to carry out a "equilibration" of the system,
+# the final box will be used to construct the morph box
+
+# heat the system to the final temperature running NVT
+#md.heat.nsteps = 5000
+#md.heat.T = 300.0
+#md.heat.restraint = backbone
+#md.heat.restr_force = 5.0
+
+# fix the density of the system running NpT
+#md.press.nsteps = 10000
+#md.press.T = 300.0
+#md.press.p = 1.0
+#md.press.restraint = backbone
+#md.press.restr_force = 4.0
+
+# restraints release in 4 steps, this is a NpT protocol
+#md.relax.nrestr = 4
+#md.relax.nsteps = 500
+#md.relax.T = 300.0
+#md.relax.p = 1.0
+#md.relax.restraint = backbone
