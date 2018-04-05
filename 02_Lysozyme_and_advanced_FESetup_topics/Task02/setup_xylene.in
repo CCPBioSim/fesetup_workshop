@@ -8,7 +8,7 @@ mdengine = amber, sander
 #setus up ligand benzene in a solvated box and in vacuum
 [ligand]
 basedir = ligands
-file.name = ligand.mol2
+file.name = ligand.pdb
 molecules = ortho-xylene 
 
 box.type = rectangular
