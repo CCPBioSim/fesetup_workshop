@@ -24,14 +24,13 @@ Furthermore you can find model answers to the notebooks in the `answers` directo
 
 ## Contents
 
-### [01 FESetup Ethane Methanol notebook](html/01_FESetup_ethane_methanol.html) ([answers](html/answers/01_FESetup_ethane_methanol_answers.html))
-
+### [01_FESetup_Ethane_Methanol/Exercise_01.ipynb](html/Exercise_01.html)
 This notebooks teaches how to setup an alchemical free energy calculation for computing the relative hydration free energy between ethane and methanol. 
 
-[download](01_FESetup_ethane_methanol.ipynb) | [download answers](answers/01_FESetup_ethane_methanol_answers.ipynb)
+[download](01_FESetup_Ethane_Methanol/Exercise_01.ipynb)
 
-### [02 Lysozyme and advanced FESetup topics](html/02_Lysozyme_and_Advanced_FESetup.html) ([answers](html/answers/02_Lysozyme_and_Advanced_FESetup_answers.html))
+### [02_Lysozyme_and_advanced_FESetup_topics/Exercise_02.ipynb](html/Exercise_02.html) ([answers](html/answers/Exercise_02.html))
 
 The second notebook will guide you through using FESetup for preparing protein simulations using different outputs as well as how to setup protein simulations with ligands bound. 
 
-[download](02_lists.ipynb) | [download answers](answers/02_lists.ipynb)
+[download](02_Lysozyme_and_advanced_FESetup_topics/Exercise_02.ipynb) | [download answers](02_Lysozyme_and_advanced_FESetup_topics/answers/Exercise_02.ipynb)
