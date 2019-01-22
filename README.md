@@ -1,6 +1,6 @@
 ## Aimed at: 
 Anyone interested in learning how to use the FESetup tool to automatically prepare protein and ligand files for simple molecular dynamics simulations or alchemical free energy calculations In particular allowing for alchemical free energy calculation setups. It will also help with how to run actual molecular dynamics simulations from the generated input. 
-You can obtain FESetup for yourself [here](http://www.hecbiosim.ac.uk/fesetup).
+You can obtain FESetup for yourself [here](http://www.ccpbiosim.ac.uk/software).
 
 ## Requirements: 
 Basic knowledge of how to execute cells in a Jupyter notebook, and how to edit a text file in a terminal. Basic knowledge of being able to execute commands on a terminal. 
