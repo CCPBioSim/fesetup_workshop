@@ -10,27 +10,9 @@ This workshop is designed to introduce you to how to use FESetup to prepare prot
 
 ## Training Material
 
-The workshop consists of a set of introductory slides covering the basics of alchemical free energy simulations and two Jupyter notebooks. These are available
-below, and can be run using the
-<a href="https://ccpbiosim.github.io/workshop/events/bristol2018/server.html" target="_blank">workshop Jupyter server</a>.
+The workshop consists of a set of introductory slides covering the basics of alchemical free energy simulations and two Jupyter notebooks.
 
-Once you have logged in, navigate to the `fesetup_workshop` directory and you will find the
-notebooks there.
-
-The two workshop notebooks are `01_FESetup_ethane_methanol.ipynb` and `02_Lysozyme_and_Advanced_FESetup.ipynb`. The two notebooks do not depend on each other, but the first one covers the basics of FESetup whereas the second one covers more advanced topics. 
-
-Furthermore you can find model answers to the notebooks in the `answers` directory. The set of presentation slides can be found as a pdf in the `slides` directory. 
-
-
-## Contents
-
-### [01_FESetup_Ethane_Methanol/Exercise_01.ipynb](html/Exercise_01.html)
-This notebooks teaches how to setup an alchemical free energy calculation for computing the relative hydration free energy between ethane and methanol. 
-
-[download](01_FESetup_Ethane_Methanol/Exercise_01.ipynb)
-
-### [02_Lysozyme_and_advanced_FESetup_topics/Exercise_02.ipynb](html/Exercise_02.html) ([answers](html/answers/Exercise_02.html))
-
+The two workshop notebooks are `01_ethane-methanol.ipynb` and `02_advanced.ipynb`. 
+The two notebooks do not depend on each other, but the first one covers the basics of FESetup whereas the second one covers more advanced topics. 
+The first notebook teaches how to setup an alchemical free energy calculation for computing the relative hydration free energy between ethane and methanol. 
 The second notebook will guide you through using FESetup for preparing protein simulations using different outputs as well as how to setup protein simulations with ligands bound. 
-
-[download](02_Lysozyme_and_advanced_FESetup_topics/Exercise_02.ipynb) | [download answers](02_Lysozyme_and_advanced_FESetup_topics/answers/Exercise_02.ipynb)
