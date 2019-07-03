@@ -1,0 +1,39 @@
+# T4-lysozyme: 
+
+logfile = T4-lysozyme_molsetup.log
+forcefield = amber, ff14SB, tip3p, cm
+
+mdengine = amber, sander
+
+#setus up ligand benzene in a solvated box and in vacuum
+[ligand]
+basedir = ligands
+file.name = ligand.pdb
+molecules = ortho-xylene 
+
+box.type = rectangular
+box.length = 12.0
+neutralize = yes
+min.nsteps = 100
+
+# prepare the biomolecules (could also be DNA for example)
+[protein]
+basedir = proteins
+molecules = 181L 
+neutralize = True
+
+
+# create the complex form the ligands and proteins above, solvate and minimise
+# the complexes
+[complex]
+# explicit enumeration of pairs, otherwise all-with-all creation even
+# when there is no [complex] section
+pairs = 181L : ortho-xylene
+
+box.type = rectangular
+box.length = 12.0
+align_axes = True
+
+min.nsteps = 200
+min.ncyc = 100
+
