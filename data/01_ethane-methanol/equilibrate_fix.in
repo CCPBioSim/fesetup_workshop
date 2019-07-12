@@ -1,5 +1,5 @@
 [globals]
-logfile = eth-meth.log
+logfile = equilibrate.log
 forcefield = amber, ff14SB, tip3p, hfe
 gaff = gaff2
 mdengine = amber, sander 
@@ -41,3 +41,6 @@ md.relax.nsteps = 500
 md.relax.T = 300.0
 md.relax.p = 1.0
 md.relax.restraint = notsolvent
+
+# defining the morphing
+morph_pairs = ethane > methanol

@@ -1,5 +1,5 @@
 [globals]
-logfile = eth-meth.log
+logfile = morph.log
 forcefield = amber, ff14SB, tip3p, hfe
 gaff = gaff2
 mdengine = amber, sander 
