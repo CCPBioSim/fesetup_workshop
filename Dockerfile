@@ -77,8 +77,8 @@ RUN jupyter-nbextension install nglview --py --sys-prefix && \
 
 # Add all of the workshop files to the home directory
 RUN git clone https://github.com/CCPBioSim/fesetup_workshop.git
-RUN mv fesetup_workshop/* . && \
-    rm -r Dockerfile README.md _config.yml FESetup1.2.1_Linux.sh fesetup_workshop
+RUN mv fesetup-workshop/* . && \
+    rm -r Dockerfile README.md _config.yml FESetup1.2.1_Linux.sh fesetup-workshop
 
 # UNCOMMENT THIS LINE FOR REMOTE DEPLOYMENT
 #COPY jupyter_notebook_config.py /etc/jupyter/
