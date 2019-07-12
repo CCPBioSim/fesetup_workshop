@@ -61,6 +61,7 @@ RUN rm -r $HOME/work
 # Python Dependencies for the workshop
 RUN pip install --user numpy
 RUN pip install --user mdtraj
+RUN pip install --user pandas
 
 # Install Jupyterhub plugins
 RUN pip install jupyterhub-tmpauthenticator
